@@ -5,23 +5,61 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <script>
-            function newDoc() {
-                window.location.assign("otrais.html")
-            }
-        </script>
         <title>Mans datorikas portfolio</title>
+        <link rel="stylesheet" href="css/mansStils.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+
+        <a href="#attels" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>Attēlu apstrāde</p>
+        </a>
+        <a href="#teksts" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>Tekstapstrāde</p>
+        </a>
+        <a href="#modelis" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>3D modelēšana</p>
+        </a>
+        <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>Video</p>
+        </a>
+        <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>Izklājlapas</p>
+        </a>
+        <a href="otrais.html#projekts" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>Personas publisko datu saturs un drošība</p>
+        </a>
+        </nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class=" w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#attels" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#teksts" class="w3-bar-item w3-button" style="width:25% !important">Tekstapstrāde</a>
+        <a href="#modelis" class="w3-bar-item w3-button" style="width:25% !important">3D modelēšana</a>
+        <a href="#video" class="w3-bar-item w3-button" style="width:25% !important">Video</a>
+        <a href="#excel" class="w3-bar-item w3-button" style="width:25% !important">Izklājlapas</a>
+        <a href="otrais.html#projekts" class="w3-bar-item w3-button" style="width:25% !important">Personas publisko datu saturs un drošība</a>        
+    </div>
+    </div>
+
+    <div id="main">
+        <div class="columns">
             <h1>
                 Mans datorikas portfolio
             </h1>
             <p>
                 Labdien! Es esmu Jēkabs Nesenbergs un šis ir mans 10. klases datorikas portfolio.
             </p>
+            <div id="attels">
             <h2>
                 Attēlu apstrade
             </h2>
@@ -32,9 +70,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     Rastrgrafika
                 </h3>
                     <p>
-                        Vispirms veidoju gif animāciju par individuālo tēmu no vairākiem rastra attēliem.
+                        Vispirms apguvu GIMP un veidoju gif animāciju par individuālo tēmu no vairākiem rastra attēliem.
                     <br>
-                        <img src="images/tema_gif">
+                        <img src="images/filma.jpg" style="width:20%;">
                     </p>                
                 <h3>
                     Vektorgrafika
@@ -42,52 +80,72 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <p>
                         Pēc tam radīju potenciālu logo grupas veidotajam uzņēmumam.
                     <br>
-                        <img src="images/logo.svg">                    
+                        <img src="images/radisana_logo.png" style="width:30%;"><img src="images/logo.svg" style="width:11%;">                  
                     </p>
+            </div>
+            <div id="teksts">
             <h2>
                 Tekstapstrāde
             </h2>
                 <p>
                     Tālāk mācījos tekstapstrādi Word programmā.
-                </p>            
+                    <br>
+                    <img src="images/word.png" style="width:35%;">
+                </p>    
+            </div>
+            <div id="modelis">     
             <h2>
                 3D modelēšana
             </h2>
                 <p>
                     Tad veidoju šķautni grupas veidotā uzņēmuma suvenīram - kubam ar logo.
                 <br>
-                    <img src="images/modelis.jpeg">                      
+                    <img src="images/modelis.png" style="width:22%"><img src="images/printet.png" style="width:20%">                      
                 </p>
+            </div>
+            <div id="video">
             <h2>
                 Video
             </h2>
                 <p>
                     Veidoju video par grupas uzņēmuma suvenīra veidošanu - logo izveidi, kuba modelēšanu un kuba izprintēšanu.
                     <br>
-                    <video width="320" height="240" controls preload muted>
+                    <video width="25%"  controls preload muted>
                         <source src="video/mp4/projekta_video.mp4" type="video/mp4">
                         <source src="video/ogg/projekta_video.ogg" type="video/ogg">
 
                         Your browser does not support the video tag.
                     </video>
                 </p>
+            </div>
+            <div id="excel">
             <h2>
                 Izklājlapas
             </h2>
                 <p>
                     Pēdīgi apguvu izklājlapu izmantošanu un veidošanu Excel programmā.
                     <br>
+                    <img src="images/excel.png" style="width:25%">
+                    <br>
                     <a href="documents/aprēķini_JN_10g.xlsx" download>Šeit var lejuplādēt vienu no manām izklājlapām</a>
                 </p>
+            </div>
             <h2>
-                Manas tēmas projekts
+                Personas publisko datu saturs un drošība
                 <h3>
                     <a href="otrais.html">Klikšķini, lai tiktu uz pilno projekta lapu</a>
                 </h3>
             </h2>
-                
-            </h3>
+            <h2>
+                Javascript
+            </h2>
+            <p>
+            <a href="forma.html">Forma</a>
+            <a href="dzerdaudz.html">Ceturtais dzēriens</a>
+            <a href="dzer.html">Dzēriena cena</a>
+            </p>
         </div>
+    </div>
 
     </body>
 

@@ -1,0 +1,51 @@
+body {
+    background-image: url('../images/fons_udens.jpg');
+    background-size: 55%;
+    background-repeat: repeat;
+}
+.container {
+  display: flex;
+  gap: 20px;
+}
+.columns{
+    column-count:1;
+}
+.text {
+  flex: 1;
+}
+
+.pdf {
+  flex: 1;
+  height: 140vh;
+}
+img{
+    margin: 10px;
+}
+h1{
+    font-size: 40px;
+    text-align:center;
+    color:darkred
+}
+h2{
+    font-size:35px;
+    text-align:center;
+    color:tomato
+}
+h3{
+    font-size: 30px;
+    text-align:center;
+    color:blueviolet
+}
+p{
+    font-size: 25px;
+    text-align:center;
+    color:lightsalmon
+}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222; position: fixed; height: auto; border: none;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px !important}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.w3-hide{display:none!important}@media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}};@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
