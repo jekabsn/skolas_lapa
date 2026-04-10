@@ -3,6 +3,61 @@ body {
     background-size: 55%;
     background-repeat: repeat;
 }
+
+.jmenu{
+    background-color: red;
+    width:200px;
+    position:fixed;
+}
+
+.menuitem{
+    margin:5px;
+    background-color: gray;
+      display: flex;  
+  flex-wrap: wrap;
+
+}
+
+/*.menuitem:hover{
+    margin:20px;
+    padding:30px;
+    color:red;
+}*/
+
+.menuitem.active {
+    margin:20px;
+    background-color:black;
+    color:white;
+}
+
+.menuitem.sub {
+    font-style: italic;
+    color:green;
+}
+
+.jmenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jmenu > ul > li {
+  display: inline-block;
+  margin-right: 14px;
+  vertical-align: top;
+}
+
+.jmenu ul ul {
+  padding-left: 36px;
+  margin: 4px 0 0;
+}
+
+.jmenu ul ul li {
+  display: block;
+  margin: 4px 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
   gap: 20px;
@@ -41,11 +96,6 @@ p{
     text-align:center;
     color:lightsalmon
 }
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222; position: fixed; height: auto; border: none;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px !important}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-.w3-hide{display:none!important}@media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}};@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
+
+
+
