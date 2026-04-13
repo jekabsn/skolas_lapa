@@ -7,7 +7,7 @@
 </head>
     <body>
         <p>
-            <form id="info_daudzuma_ievads">
+            <form onsubmit="return false" id="info_daudzuma_ievads">
                 Aprēķināt cik daudz informācijas var lejuplādēt
                     <br>
                     <input type="text" id="sekundes_ladet" name="sekundes_ladet">
@@ -19,6 +19,8 @@
             <br>
             <form id="info_daudzuma_izvads">
                  <input type="text" readonly id="result" name="result">
+                 <input type="radio" name="baiti" id="KiB"><text>KiB</text>
+                 <input type="radio" name="baiti" id="KB"><text>KB</text>              
             </form>
     </body>
 <script src="javascript/forma_info.js"></script>

@@ -12,18 +12,21 @@
         <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
             <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
         </p>
-        <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
+        <p>Ja gribi izdzēst datuma lodziņa saturu, spied pogu RESET
             <input value="RESET" type="reset">
         </p>
     </form>
     <form>
         <div>1.skaitlis<input type="text" name="sk1"> </div>
         <div>
+            <input value="+" name="plus" onclick="rez.value=parseFloat(sk1.value)+parseFloat(sk2.value)" type="button">
+            <input value="-" name="minus" onclick="rez.value=sk1.value-sk2.value" type="button">
             <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
-        </div>
+            <input value="/" name="dal" onclick="rez.value=sk1.value/sk2.value" type="button">
         <div>2.skaitlis<input type="text" name="sk2"> </div>
         <hr>
-        <div>Rezultāts<input name="rez"> </div>
+        <div>Rezultāts<input name="rez" readonly> </div>
+        <div>Ja gribi izdzēst skaitļu lodziņu saturu, spied pogu RESET<input value="RESET" type="reset"></div>
     </form>
 </body>
 </html>
